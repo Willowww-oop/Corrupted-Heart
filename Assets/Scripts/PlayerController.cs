@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController characterController;
 
+    [SerializeField] GameObject player;
+
     public float movementSpeed = 7.5f;
     public float sprintSpeed = 12f;
     public float rotationSpeed = 5f;
@@ -16,11 +18,17 @@ public class PlayerController : MonoBehaviour
     public float customGrav = -20f;
     public int characterVal;
 
+    public GameObject char1;
+    public GameObject char2;
+    private GameObject activeChar;
+    private bool isChar1Active = true;
+
     private float rotationY;
     private float jumpVelocity; 
 
     private void Start()
     {
+        SpawnCharacter(char1);
         characterController = GetComponent<CharacterController>();
     }
 
@@ -33,7 +41,7 @@ public class PlayerController : MonoBehaviour
         jumpVelocity = jumpVelocity + customGrav * Time.deltaTime;
         characterController.Move(new Vector3(0, jumpVelocity, 0) * Time.deltaTime);
 
-        Debug.Log("Current Speed: " + MovementVector);
+        //Debug.Log("Current Speed: " + MovementVector);
     }
 
     public void Rotate(Vector2 RotationVector)
@@ -57,55 +65,30 @@ public class PlayerController : MonoBehaviour
             movementSpeed = sprintSpeed;
         }
 
-        Debug.Log("Sprinted");
+        //Debug.Log("Sprinted");
     }
 
     public void Swap()
     {
-        if (characterVal == 1)
-        {
-            Debug.Log("Swapped to character 1");
-        }
+        Vector3 oldPos = activeChar.transform.position;
+        Quaternion oldRot = activeChar.transform.rotation;
 
-        else if (characterVal == 2)
-        {
-            Debug.Log("Swapped to character 2");
-        }
+        Destroy(activeChar);
+
+        isChar1Active = !isChar1Active;
+        GameObject prefabToSpawn = isChar1Active ? char1 : char2;
+
+        SpawnCharacter(prefabToSpawn, oldPos, oldRot);
     }
 
-    //void SwapCharacter()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Tab))
-    //    {
-    //        switch (characterVal)
-    //        {
-    //            case 0:
-    //                if (characterVal == 0)
-    //                {
-    //                    CharacterTwo.SetActive(false);
-    //                    CharacterOne.SetActive(true);
-    //                    Instantiate<GameObject>(CharacterOne, transform.position, Quaternion.identity);
+    void SpawnCharacter(GameObject prefab)
+    {
+        SpawnCharacter(prefab, player.transform.position, Quaternion.identity);
+    }
 
-    //                    characterVal++;
-    //                }
-
-    //                break;
-
-    //            case 1:
-    //                if (characterVal == 1)
-    //                {
-    //                    CharacterOne.SetActive(false);
-    //                    CharacterTwo.SetActive(true);
-    //                    Instantiate<GameObject>(CharacterTwo, transform.position, Quaternion.identity);
-
-    //                    characterVal--;
-    //                }
-
-    //                break;
-    //        }
-
-    //        //Console.WriteLine(characterVal);
-    //    }
-    //}
+    void SpawnCharacter(GameObject prefab, Vector3 position, Quaternion rotation)
+    {
+        activeChar = Instantiate(prefab, gameObject.transform);
+    }
 
 }

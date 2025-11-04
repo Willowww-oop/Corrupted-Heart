@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.8396587
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.77
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5166024647972804298, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 99254354949700467, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -59,5 +63,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6367902227476932410}
   m_SourcePrefab: {fileID: 100100000, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
+--- !u!1 &4859024487067864002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed7767432cd1f3d4293bafa5264209bc, type: 3}
+  m_PrefabInstance: {fileID: 5742037672807364243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &6367902227476932410
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4859024487067864002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.9089859
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.4257208, z: 0}
