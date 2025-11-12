@@ -44,7 +44,8 @@ public class PlayerInputs : MonoBehaviour
         // Preformed actions
 
         JumpAction.performed += OnJumpPerformed;
-        SprintAction.performed += OnSprintPerformed;
+        SprintAction.performed += OnSprintStarted;
+        SprintAction.canceled += OnSprintCanceled;
         //ParkourAction.performed += OnParkourPerformed;
 
         //RobotAction.performed += OnChara1Performed;
@@ -63,8 +64,8 @@ public class PlayerInputs : MonoBehaviour
         Vector2 MovementVector = MoveAction.ReadValue<Vector2>();
         playerController.Move(MovementVector);
 
-        Vector2 LookVector = LookAction.ReadValue<Vector2>();
-        playerController.Rotate(LookVector);
+        //Vector2 LookVector = LookAction.ReadValue<Vector2>();
+        //playerController.Rotate(LookVector);
     }
 
     private void OnJumpPerformed(InputAction.CallbackContext context)
@@ -72,14 +73,14 @@ public class PlayerInputs : MonoBehaviour
         playerController.Jump();
     }
 
-    private void OnSprintPerformed(InputAction.CallbackContext context)
+    private void OnSprintStarted(InputAction.CallbackContext context)
     {
-        playerController.Sprint();
+        playerController.SprintStarted();
     }
 
-    private void OnParkourPerformed(InputAction.CallbackContext context)
+    private void OnSprintCanceled(InputAction.CallbackContext context)
     {
-
+        playerController.SprintCanceled();
     }
 
     private void OnSwapPerformed(InputAction.CallbackContext context)
