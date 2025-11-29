@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEditor.Timeline;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
@@ -14,12 +15,18 @@ public class PlayerController : MonoBehaviour
 
     // General Player Stats
 
+    #region Player Stats
+
     public float movementSpeed = 7.5f;
     public float sprintSpeed = 12f;
     public float rotationSpeed = 5f;
     public float jumpHeight = 10f;
     public float customGrav = -20f;
+    public float rotateSpeed = 3f;
+    private float currentSpeed;
+    public float spawnCooldown = 0.5f;
     //public int characterVal;
+    #endregion
 
     // Player Swap
 
@@ -33,31 +40,77 @@ public class PlayerController : MonoBehaviour
     private float rotationY;
     private float jumpVelocity;
     private bool isSprinting;
+    private bool isSwapping;
 
-    private void Start()
+    // Teleport variables
+
+    [SerializeField] LayerMask collision;
+    public float blinkDistance = 6f;
+    public float teleTimer = 0f;
+    public float teleCooldown = 1f;
+    private Vector3 lastMoveDir = Vector3.zero;
+
+    // Hover variables
+
+    public float hoverDur = 1.5f;
+    private bool isHovering;
+    private float hoverTime;
+    public float hoverCooldown = 1f;
+    public float hoverTimer = 0f;
+
+    void Start()
     {
         SpawnCharacter(char1);
         characterController = GetComponent<CharacterController>();
+    }
+
+    void Update()
+    { 
+        if (teleTimer > 0)
+        {
+            teleTimer -= Time.deltaTime;
+        }
+
+        teleCooldown = 1f;
+        hoverCooldown = 1f;
+
+        HoverHandler();
     }
 
     // Character Movements
 
     public void Move(Vector2 MovementVector)
     {
-        float currentSpeed = isSprinting ? sprintSpeed : movementSpeed;
+        currentSpeed = isSprinting ? sprintSpeed : movementSpeed;
 
         Vector3 move = transform.forward * MovementVector.y + transform.right * MovementVector.x;
+        move.Normalize();
+
         move = move * currentSpeed * Time.deltaTime;
         characterController.Move(move);
 
-        jumpVelocity = jumpVelocity + customGrav * Time.deltaTime;
-        characterController.Move(new Vector3(0, jumpVelocity, 0) * Time.deltaTime);
-    }
+        if (!isHovering)
+        {
+            jumpVelocity = jumpVelocity + customGrav * Time.deltaTime;
+        }
 
-    public void Rotate(Vector2 RotationVector)
-    {
-        rotationY += RotationVector.x * rotationSpeed * Time.deltaTime;
-        transform.localRotation = Quaternion.Euler(0, rotationY, 0);
+        else
+        {
+            jumpVelocity = 0f;
+        }
+
+        characterController.Move(new Vector3(0, jumpVelocity, 0) * Time.deltaTime);
+
+        // Rotates Character to Movement
+
+        if (move.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(move, Vector3.up);
+            activeChar.transform.rotation = Quaternion.Slerp(
+                activeChar.transform.rotation,
+                targetRotation,
+                rotateSpeed * Time.deltaTime);
+        }
     }
 
     public void Jump()
@@ -68,7 +121,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Sprint Bools
+    public void ParkourAbility()
+    {
+        // Robot Character Ability
+
+        if (isChar1Active)
+        {
+            Blink();
+        }
+
+        // Magma Character Ability
+
+        else if (!isChar1Active)
+        {
+            Hover();
+        }
+
+    }
+
 
     public void SprintStarted()
     {
@@ -84,10 +154,16 @@ public class PlayerController : MonoBehaviour
 
     public void Swap()
     {
+        if (isHovering)
+        {
+            return;
+        }
+
         Vector3 oldPos = activeChar.transform.position;
         Quaternion oldRot = activeChar.transform.rotation;
 
         Destroy(activeChar);
+
 
         isChar1Active = !isChar1Active;
         GameObject prefabToSpawn = isChar1Active ? char1 : char2;
@@ -99,9 +175,8 @@ public class PlayerController : MonoBehaviour
     {
         if (activeChar == null) Destroy(activeChar);
 
-        SpawnCharacter(prefab, player.transform.position, Quaternion.identity);
-        activeChar.transform.localPosition = Vector3.zero;
-        activeChar.transform.localRotation = Quaternion.identity;
+        SpawnCharacter(prefab, player.transform.position, player.transform.rotation);
+
 
     }
 
@@ -109,5 +184,88 @@ public class PlayerController : MonoBehaviour
     {
         activeChar = Instantiate(prefab, gameObject.transform);
     }
+
+    // Robot Parkour Ability
+
+    public void Blink()
+    {
+        if (teleTimer > 0f)
+        {
+            return;
+        }
+
+        // if standing still, in the direction you're facing
+
+        Vector3 blinkDirection = lastMoveDir.sqrMagnitude > 0.01f ? lastMoveDir : activeChar.transform.forward;
+
+        blinkDirection.Normalize();
+
+        Vector3 origin = transform.position + Vector3.up * 1f;
+        Vector3 targetPos;
+
+        // Check if you're in front of a wall
+
+        if (Physics.Raycast(origin, blinkDirection, out RaycastHit hit, blinkDistance, collision))
+        {
+            targetPos = hit.point - blinkDirection * 0.5f;
+        }
+
+        else
+        {
+            targetPos = transform.position + blinkDirection * blinkDistance;
+        }
+
+        Teleport(targetPos);
+
+        teleTimer = teleCooldown;
+    }
+
+    private void Teleport(Vector3 target)
+    {
+        characterController.enabled = false;
+
+        target.y = transform.position.y;
+        transform.position = target;
+
+        characterController.enabled = true;
+    }
+
+    // Magma Parkour Ability
+
+    public void Hover()
+    {
+        if (characterController.isGrounded)
+        {
+            return;
+        }
+        // Checks if we're already hovering
+
+        if (isHovering) return;
+
+        isHovering = true;
+        hoverTime = hoverDur;
+
+        // Makes character float
+
+        jumpVelocity = 0f;
+
+        hoverTimer = hoverCooldown;
+    }
+
+    public void HoverHandler()
+    {
+        if (isHovering)
+        {
+            hoverTime -= Time.deltaTime;
+
+            jumpVelocity = 0f;
+            
+            if (hoverTime <= 0f)
+            {
+                isHovering = false;
+            }
+        }
+    }
+
 
 }

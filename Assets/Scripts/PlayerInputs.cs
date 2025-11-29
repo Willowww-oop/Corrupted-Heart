@@ -28,7 +28,7 @@ public class PlayerInputs : MonoBehaviour
         LookAction = InputSystem.actions.FindAction("Look");
         JumpAction = InputSystem.actions.FindAction("Jump");
         SprintAction = InputSystem.actions.FindAction("Sprint");
-        //ParkourAction = InputSystem.actions.FindAction("ParkourAbility");
+        ParkourAction = InputSystem.actions.FindAction("ParkourAbility");
 
         //// Swap 
 
@@ -46,7 +46,7 @@ public class PlayerInputs : MonoBehaviour
         JumpAction.performed += OnJumpPerformed;
         SprintAction.performed += OnSprintStarted;
         SprintAction.canceled += OnSprintCanceled;
-        //ParkourAction.performed += OnParkourPerformed;
+        ParkourAction.performed += OnParkourPerformed;
 
         //RobotAction.performed += OnChara1Performed;
         //MagmaAction.performed += OnChara2Performed;
@@ -72,6 +72,11 @@ public class PlayerInputs : MonoBehaviour
     {
         playerController.Jump();
     }
+    
+    private void OnParkourPerformed(InputAction.CallbackContext context)
+    {
+        playerController.ParkourAbility();
+    }
 
     private void OnSprintStarted(InputAction.CallbackContext context)
     {
@@ -87,6 +92,8 @@ public class PlayerInputs : MonoBehaviour
     {
         playerController.Swap();
     }
+
+    
 
     //private void OnChara1Performed(InputAction.CallbackContext context)
     //{
