@@ -1,0 +1,1248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7189780034310500905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6187
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6187
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6187
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.55261
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.060339928
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -45.77237
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: m_Name
+      value: PlaceHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346489557716569248, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dce7bb25cbc47c14097337a3ed69ec51, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2561820511394336244}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2340609620534495852}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3838971109462966035}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2207129593801712761}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8113006243523344215}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1335966446480431756}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -303554097384277504}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9099346685434457148}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1137293164935181989}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2216144234019247973}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3459028127558066655}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5830675221662411770}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5234188894486336243}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1255430845328663622}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5005247446060940624}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5459933032734981200}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5507089134347453990}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -619497986223997296}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -172381390142730944}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8845439665672648166}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4822980642563818481}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5458943353795150105}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7916637940382971980}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3803577940953299911}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6298444145682098431}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 117221862230503427}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2669842930299116135}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1206121729420673133}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9195996660290354757}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2683014875634096572}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5293951798769632168}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542699650078036230}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6898325244875623005}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -699609430573827858}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6438201579294779903}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5623763579389000245}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8872680268791119110}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5603957643199300620}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6203698578956125926}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8534803697255049711}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -761716015876380159}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1196099540766658897}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8351603824606860786}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2575459169013011344}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -673869740283129825}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1907617157708746563}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8503245428943958354}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5982003879277314383}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2889875232892677146}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2831414239303846036}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8718861234916265105}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 662302711439039170}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -9016145513164236781}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7345180698663927335}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1049502133692121492}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8711233715020312706}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7252459883262423058}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7274265994084274539}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3440687274818380462}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1965555554520177920}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 152394514231011880}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8315703539299436448}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6901883151944240464}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7459940955880567154}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2018405682518066693}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -9119407647612409353}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 732668786734719994}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4666677198722293939}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -294426341138323940}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6653214858402029818}
+  m_SourcePrefab: {fileID: 100100000, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+--- !u!1 &8000173086094184312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fdaec5dd3f85a4c45a52bfbd36c984b3, type: 3}
+  m_PrefabInstance: {fileID: 7189780034310500905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &2561820511394336244
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &2340609620534495852
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba5c68b7fc0c01f4490691beebd520fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3838971109462966035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74364087120c67e41b6639028d850d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  maxHealth: 100
+  currentHealth: 0
+  damageOnHit: 10
+  target: {fileID: 6040638113017950655, guid: 59eb838d0686e084f98d8bb040ba85ed, type: 3}
+  attackDistance: 2.5
+  lineSight: 15
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!143 &2207129593801712761
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Height: 1.94
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.98, z: 0}
+--- !u!136 &8113006243523344215
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.9304316
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8619097, z: 0}
+--- !u!114 &-1335966446480431756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-303554097384277504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &9099346685434457148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1137293164935181989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &2216144234019247973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &3459028127558066655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5830675221662411770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5234188894486336243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1255430845328663622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-5005247446060940624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5459933032734981200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-5507089134347453990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-619497986223997296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-172381390142730944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-8845439665672648166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &4822980642563818481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5458943353795150105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &7916637940382971980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-3803577940953299911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6298444145682098431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &117221862230503427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &2669842930299116135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1206121729420673133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &9195996660290354757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-2683014875634096572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-5293951798769632168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &1542699650078036230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6898325244875623005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-699609430573827858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6438201579294779903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5623763579389000245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &8872680268791119110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &5603957643199300620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6203698578956125926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-8534803697255049711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-761716015876380159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1196099540766658897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-8351603824606860786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-2575459169013011344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-673869740283129825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1907617157708746563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &8503245428943958354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-5982003879277314383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &2889875232892677146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-2831414239303846036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &8718861234916265105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &662302711439039170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-9016145513164236781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &7345180698663927335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1049502133692121492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-8711233715020312706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &7252459883262423058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &7274265994084274539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-3440687274818380462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-1965555554520177920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &152394514231011880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &8315703539299436448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6901883151944240464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-7459940955880567154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-2018405682518066693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-9119407647612409353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &732668786734719994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &4666677198722293939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &-294426341138323940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}
+--- !u!114 &6653214858402029818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000173086094184312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfc62368de67de42a383b4f4f4232f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathNotifier
+  spawner: {fileID: 0}

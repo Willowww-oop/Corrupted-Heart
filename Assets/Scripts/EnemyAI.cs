@@ -1,8 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Timeline;
 
 public class EnemyAI : MonoBehaviour
 {
+    public int maxHealth = 100;
+    public int currentHealth;
+    public int damageOnHit = 10;
+
     public Transform target;
     public float attackDistance;
     public float lineSight = 15f;
@@ -18,6 +23,15 @@ public class EnemyAI : MonoBehaviour
     {
         m_Agent = GetComponent<NavMeshAgent>();
         m_Animator = GetComponent<Animator>();
+
+        currentHealth = maxHealth;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            target = player.transform;
+        }
     }
 
     // Update is called once per frame
@@ -46,40 +60,28 @@ public class EnemyAI : MonoBehaviour
                 m_Agent.destination = target.position;
                 Debug.DrawLine(transform.position, target.position);
             }
-        //if (hasLineOfSight)
-        //{ 
-        //}
 
-        //else
-        //{
-        //    // enemy loses sight
-
-        //    m_Agent.isStopped = true;
-        //    m_Animator.SetBool("Attack", false);
-        //}
     }
 
-    //void OnAnimatorMove() 
-    //{
-    //    if (m_Animator.GetBool("Attack") == false)
-    //    {
-    //        m_Agent.speed = (m_Animator.deltaPosition / Time.deltaTime).magnitude;
-    //    }
-    //}
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
 
-    //bool CheckLineOfSight()
-    //{
-    //    Vector3 origin = transform.position + Vector3.up; // Eye height
-    //    Vector3 direction = (target.position + Vector3.up - origin).normalized;
+        if (currentHealth < 0)
+        {
+            Die();
+        }
+    }
 
-    //    if (Physics.Raycast(origin, direction, out RaycastHit hit, lineSight, ~0, QueryTriggerInteraction.Ignore))
-    //    {
-    //        // The ray hit something — check if it’s the target
-    //        if (hit.transform == target)
-    //            return true; // Clear line of sight
-    //    }
+    public void Die()
+    {
+        m_Agent.isStopped = true;
+        m_Agent.enabled = false;
 
-    //    return false; // Blocked by an obstacle
-    //}
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.enabled = true;
+
+        Destroy(gameObject, 2f);
+    }
 
 }

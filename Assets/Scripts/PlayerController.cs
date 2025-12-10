@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
-using UnityEditor.Timeline;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using Unity.Cinemachine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.HighDefinition;
 
@@ -12,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
 
     [SerializeField] GameObject player;
+
+    private Camera activeCamera;
 
     // General Player Stats
 
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public float spawnCooldown = 0.5f;
     //public int characterVal;
     #endregion
+
+    #region OtherCharStuff
 
     // Player Swap
 
@@ -58,10 +61,13 @@ public class PlayerController : MonoBehaviour
     public float hoverCooldown = 1f;
     public float hoverTimer = 0f;
 
+    #endregion
+
     void Start()
     {
         SpawnCharacter(char1);
         characterController = GetComponent<CharacterController>();
+        activeCamera = Camera.main;
     }
 
     void Update()
@@ -83,11 +89,19 @@ public class PlayerController : MonoBehaviour
     {
         currentSpeed = isSprinting ? sprintSpeed : movementSpeed;
 
-        Vector3 move = transform.forward * MovementVector.y + transform.right * MovementVector.x;
+        Transform cam = activeCamera.transform;
+
+        Vector3 camForward = Vector3.ProjectOnPlane(cam.forward, Vector3.up).normalized;
+        Vector3 camRight = Vector3.ProjectOnPlane(cam.right, Vector3.up).normalized;
+
+        Vector3 move = camForward * MovementVector.y + camRight * MovementVector.x;
+
+        //Vector3 move = transform.forward * MovementVector.y + transform.right * MovementVector.x;
         move.Normalize();
 
         move = move * currentSpeed * Time.deltaTime;
         characterController.Move(move);
+
 
         if (!isHovering)
         {
@@ -111,6 +125,10 @@ public class PlayerController : MonoBehaviour
                 targetRotation,
                 rotateSpeed * Time.deltaTime);
         }
+
+        // Make Character go fowards based on the camera 
+
+
     }
 
     public void Jump()
@@ -166,7 +184,7 @@ public class PlayerController : MonoBehaviour
 
 
         isChar1Active = !isChar1Active;
-        GameObject prefabToSpawn = isChar1Active ? char1 : char2;
+        GameObject prefabToSpawn = isChar1Active ? char1 : char2; 
 
         SpawnCharacter(prefabToSpawn, oldPos, oldRot);
     }
@@ -183,6 +201,8 @@ public class PlayerController : MonoBehaviour
     void SpawnCharacter(GameObject prefab, Vector3 position, Quaternion rotation)
     {
         activeChar = Instantiate(prefab, gameObject.transform);
+
+        activeChar.transform.forward = transform.forward;
     }
 
     // Robot Parkour Ability
@@ -266,6 +286,5 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
 
 }
