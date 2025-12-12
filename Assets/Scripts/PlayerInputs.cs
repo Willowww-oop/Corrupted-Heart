@@ -38,7 +38,7 @@ public class PlayerInputs : MonoBehaviour
 
         //// Attacks 
 
-        //Attack1Action = InputSystem.actions.FindAction("Attack1");
+        Attack1Action = InputSystem.actions.FindAction("Attack1");
         //Attack2Action = InputSystem.actions.FindAction("Attack2");
 
         // Preformed actions
@@ -52,7 +52,7 @@ public class PlayerInputs : MonoBehaviour
         //MagmaAction.performed += OnChara2Performed;
         SwapAction.performed += OnSwapPerformed;
 
-        //Attack1Action.performed += OnAttack1Performed;
+        Attack1Action.performed += OnAttack1Performed;
         //Attack2Action.performed += OnAttack2Performed;
 
         Cursor.visible = false;
@@ -93,6 +93,10 @@ public class PlayerInputs : MonoBehaviour
         playerController.Swap();
     }
 
+    private void OnAttack1Performed(InputAction.CallbackContext context)
+    {
+        playerController.Attack();
+    }
     
 
     //private void OnChara1Performed(InputAction.CallbackContext context)
@@ -106,10 +110,6 @@ public class PlayerInputs : MonoBehaviour
     //    playerController.Swap();
     //}
 
-    private void OnAttack1Performed(InputAction.CallbackContext context)
-    {
-
-    }
     private void OnAttack2Performed(InputAction.CallbackContext context)
     {
 

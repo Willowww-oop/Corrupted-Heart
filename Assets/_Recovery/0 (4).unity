@@ -45741,7 +45741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolumePerSceneData
   serializedBakingSet: {fileID: 0}
-  sceneGUID: 6121371ee5e49ba4b94976094f280b7f
+  sceneGUID: 032e63ca3f3187548a408f319bd75220
   obsoleteAsset: {fileID: 0}
   obsoleteCellSharedDataAsset: {fileID: 0}
   obsoleteCellSupportDataAsset: {fileID: 0}
@@ -47238,7 +47238,6 @@ MonoBehaviour:
   rotateSpeed: 3
   spawnCooldown: 0.5
   damage: 10
-  maxHealth: 100
   attackCooldown: 0.5
   attackRange: 1.5
   enemyMask:

@@ -24,8 +24,21 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 10f;
     public float customGrav = -20f;
     public float rotateSpeed = 3f;
+
     private float currentSpeed;
     public float spawnCooldown = 0.5f;
+
+    public int damage = 10;
+    public int char1Health = 100;
+    public int char2Health = 120;
+    private int currentHealth;
+
+    public float attackCooldown = 0.5f;
+    private float attackTimer = 0f;
+
+    public float attackRange = 1.5f;
+    public LayerMask enemyMask;
+
     //public int characterVal;
     #endregion
 
@@ -65,9 +78,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        SpawnCharacter(char1);
         characterController = GetComponent<CharacterController>();
         activeCamera = Camera.main;
+
+        currentHealth = char1Health;
+        SpawnCharacter(char1);
     }
 
     void Update()
@@ -81,6 +96,8 @@ public class PlayerController : MonoBehaviour
         hoverCooldown = 1f;
 
         HoverHandler();
+
+        if (attackTimer > 0) attackTimer -= Time.deltaTime;
     }
 
     // Character Movements
@@ -139,6 +156,75 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+
+        Debug.Log("Player took damage: " + amount + ". Current health" + currentHealth);
+
+        if (currentHealth < 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        Debug.Log("Character died");
+
+        if (isChar1Active)
+        {
+            char1Health = 0;
+        }
+
+        else
+        {
+            char2Health = 0;
+        }
+
+        if (isChar1Active && char2Health > 0)
+        {
+            Swap();
+            return;
+        }
+        else if (!isChar1Active && char1Health > 0)
+        {
+            Swap();
+            return;
+        }
+
+        else if (char1Health > 0 && char2Health > 0) 
+        {
+
+        }
+
+    }
+
+    public void Attack()
+    {
+        if (attackTimer > 0f) return;
+
+        attackTimer = attackCooldown;
+
+        Vector3 origin = activeChar.transform.position + activeChar.transform.forward * (attackRange * 0.5f);
+
+        Collider[] hits = Physics.OverlapSphere(origin, attackRange, enemyMask);
+
+
+        foreach (Collider c in hits)
+        {
+            if (c.TryGetComponent(out EnemyAI enemy))
+            {
+                enemy.TakeDamage(damage);
+
+                Debug.Log("Hit Enemy");
+            }
+        }
+
+        Debug.Log("Character Attacked");
+
+    }
+
     public void ParkourAbility()
     {
         // Robot Character Ability
@@ -156,7 +242,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
 
     public void SprintStarted()
     {
@@ -177,6 +262,17 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        if (isChar1Active)
+        {
+            damage = 100;
+            char1Health = currentHealth;
+        }
+
+        else
+        {
+            damage = 100;
+            char2Health = currentHealth;
+        }
         Vector3 oldPos = activeChar.transform.position;
         Quaternion oldRot = activeChar.transform.rotation;
 
@@ -186,7 +282,10 @@ public class PlayerController : MonoBehaviour
         isChar1Active = !isChar1Active;
         GameObject prefabToSpawn = isChar1Active ? char1 : char2; 
 
+
         SpawnCharacter(prefabToSpawn, oldPos, oldRot);
+
+        currentHealth = isChar1Active ? char1Health : char2Health;
     }
 
     void SpawnCharacter(GameObject prefab)

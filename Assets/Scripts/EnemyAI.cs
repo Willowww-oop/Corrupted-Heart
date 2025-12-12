@@ -6,7 +6,9 @@ public class EnemyAI : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public int damageOnHit = 10;
+    public int damage = 50;
+    private float attackCooldown = 1f;
+    private float attackTimer = 0f;
 
     public Transform target;
     public float attackDistance;
@@ -17,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     private Animator m_Animator;
     private float m_Distance;
     private bool hasLineOfSight;
+    private PlayerController characters;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +35,8 @@ public class EnemyAI : MonoBehaviour
         {
             target = player.transform;
         }
+
+        characters = player.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -48,6 +53,8 @@ public class EnemyAI : MonoBehaviour
             {
                 m_Agent.isStopped = true;
                 m_Animator.SetBool("Attack", true);
+
+                DamagePlayer();
             }
 
 
@@ -67,7 +74,7 @@ public class EnemyAI : MonoBehaviour
     {
         currentHealth -= damage;
 
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -75,7 +82,6 @@ public class EnemyAI : MonoBehaviour
 
     public void Die()
     {
-        m_Agent.isStopped = true;
         m_Agent.enabled = false;
 
         Collider col = GetComponent<Collider>();
@@ -84,4 +90,17 @@ public class EnemyAI : MonoBehaviour
         Destroy(gameObject, 2f);
     }
 
+    public void DamagePlayer()
+    {
+        if (attackTimer > 0f)
+        {
+            attackTimer -= Time.deltaTime;
+            return;
+        }
+
+        attackTimer = attackCooldown;
+
+        characters.TakeDamage(damage);
+        Debug.Log("Player took damage");
+    }
 }
