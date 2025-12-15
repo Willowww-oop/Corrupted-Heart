@@ -29,9 +29,15 @@ public class PlayerController : MonoBehaviour
     public float spawnCooldown = 0.5f;
 
     public int damage = 10;
-    public int char1Health = 100;
-    public int char2Health = 120;
-    private int currentHealth;
+    private int char1Health = 100;
+    private int char2Health = 120;
+    public int maxChar1Health = 100;
+    public int maxChar2Health = 120;
+
+    public int GetChar1Health() => char1Health;
+    public int GetChar2Health() => char2Health;
+    public int GetChar1MaxHealth() => maxChar1Health;
+    public int GetChar2MaxHealth() => maxChar2Health;
 
     public float attackCooldown = 0.5f;
     private float attackTimer = 0f;
@@ -49,7 +55,7 @@ public class PlayerController : MonoBehaviour
     public GameObject char1;
     public GameObject char2;
     private GameObject activeChar;
-    private bool isChar1Active = true;
+    public bool isChar1Active = true;
 
     // Other Player Stats
 
@@ -78,10 +84,12 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        char1Health = maxChar1Health;
+        char2Health = maxChar2Health;
+
         characterController = GetComponent<CharacterController>();
         activeCamera = Camera.main;
 
-        currentHealth = char1Health;
         SpawnCharacter(char1);
     }
 
@@ -158,19 +166,32 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
+        //Debug.Log(char1Health);
+        //Debug.Log(char2Health);
 
-        Debug.Log("Player took damage: " + amount + ". Current health" + currentHealth);
-
-        if (currentHealth < 0)
+        if (isChar1Active)
         {
-            Die();
+            char1Health -= amount;
+            if (char1Health <= 0)
+            {
+                char1Health = 0;
+                Die();
+            }
+        }
+
+        else
+        {
+            char2Health -= amount;
+            if (char2Health <= 0)
+            {
+                char2Health = 0;
+                Die();
+            }
         }
     }
 
     public void Die()
     {
-        Debug.Log("Character died");
 
         if (isChar1Active)
         {
@@ -193,11 +214,9 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        else if (char1Health > 0 && char2Health > 0) 
-        {
+        Debug.Log("Both characters are dead");
 
-        }
-
+        enabled = false;
     }
 
     public void Attack()
@@ -207,7 +226,10 @@ public class PlayerController : MonoBehaviour
         attackTimer = attackCooldown;
 
         Vector3 origin = activeChar.transform.position + activeChar.transform.forward * (attackRange * 0.5f);
+        Vector3 direction = Vector3.forward;
 
+        Debug.DrawRay(origin, direction * attackRange, Color.red, 0.75f);
+        
         Collider[] hits = Physics.OverlapSphere(origin, attackRange, enemyMask);
 
 
@@ -215,13 +237,12 @@ public class PlayerController : MonoBehaviour
         {
             if (c.TryGetComponent(out EnemyAI enemy))
             {
+
                 enemy.TakeDamage(damage);
 
                 Debug.Log("Hit Enemy");
             }
         }
-
-        Debug.Log("Character Attacked");
 
     }
 
@@ -264,15 +285,17 @@ public class PlayerController : MonoBehaviour
 
         if (isChar1Active)
         {
-            damage = 100;
-            char1Health = currentHealth;
+            damage = 50;
         }
 
-        else
+        if (!isChar1Active)
         {
-            damage = 100;
-            char2Health = currentHealth;
+            damage = 50;
         }
+
+        if (isChar1Active && char2Health <= 0) return;
+        if (!isChar1Active && char1Health <= 0) return;
+
         Vector3 oldPos = activeChar.transform.position;
         Quaternion oldRot = activeChar.transform.rotation;
 
@@ -284,8 +307,6 @@ public class PlayerController : MonoBehaviour
 
 
         SpawnCharacter(prefabToSpawn, oldPos, oldRot);
-
-        currentHealth = isChar1Active ? char1Health : char2Health;
     }
 
     void SpawnCharacter(GameObject prefab)

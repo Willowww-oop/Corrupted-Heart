@@ -4,11 +4,12 @@ using UnityEngine.Timeline;
 
 public class EnemyAI : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 50;
     public int currentHealth;
     public int damage = 50;
     private float attackCooldown = 1f;
     private float attackTimer = 0f;
+    public int scoreValue = 50;
 
     public Transform target;
     public float attackDistance;
@@ -20,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     private float m_Distance;
     private bool hasLineOfSight;
     private PlayerController characters;
+    private bool isDead = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -72,6 +74,8 @@ public class EnemyAI : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isDead) return;
+
         currentHealth -= damage;
 
         if (currentHealth <= 0)
@@ -82,10 +86,21 @@ public class EnemyAI : MonoBehaviour
 
     public void Die()
     {
+        if (isDead) return;
+
+        isDead = true;
+
+        if (Score.Instance != null)
+        {
+            Score.Instance.AddScore(scoreValue);
+        }
+
+        Debug.Log("Score: " + scoreValue);
+
         m_Agent.enabled = false;
 
         Collider col = GetComponent<Collider>();
-        if (col != null) col.enabled = true;
+        if (col != null) col.enabled = false;
 
         Destroy(gameObject, 2f);
     }
@@ -101,6 +116,5 @@ public class EnemyAI : MonoBehaviour
         attackTimer = attackCooldown;
 
         characters.TakeDamage(damage);
-        Debug.Log("Player took damage");
     }
 }
